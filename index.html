@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/css/global.css" rel="stylesheet"/>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="flex flex-col justify-between h-screen">
+    <header class="flex justify-between p-8">
+      <div class="text-2xl font-bold tracking-tight">Rahmaa</div>
+      <div class="flex gap-8">
+        <div>Blogs</div>
+        <div>Study Case</div>
+        <div>Portfolio</div>
+      </div>
+      <div>Contact</div>
+    </header>
+
+    <main class="max-w-3xl m-auto grid grid-cols-3 gap-4">
+      <!--main card-->
+      <div class="card col-span-2 relative">
+        <div class="absolute top-4 right-4 flex gap-2 items-center bg-emerald-100 border-[1px] w-fit rounded-full px-3 py-1 text-xs">
+        <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+          <div>Available for Collaboration</div>
+        </div>
+        <img src="public/rahma pict.png" class="w-16 h-16 rounded-full"/>
+        <div>Rahma Safitri</div>
+        <div class="text-xs">an SEO Specialist freelancer</div>
+        <div class="flex gap-1 items-baseline">
+          <h1 id="heading"></h1>
+        </div>
+      </div>
+
+      <!--linkedin card-->
+      <div class="card flex justify-between items-center">
+        <a href="https://www.linkedin.com/in/nur-rahma-safitri/"> <img src="public/LinkedIn_logo.png" class="w-fit"/></a>
+      </div>
+
+      <!--study case-->
+      <div class="card flex justify-center items-center relative">
+        <div class="absolute bottom-3 left-3 bg-slate-300 p-2 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>          
+        </div>
+        <div class="text-lg font-medium">Study Case SEO</div>
+      </div>
+
+      <!--colaborate card-->
+      <div class="card col-span-2">
+        <h3>Want to collaborate?</h3>
+        <p>If you need to leverage your business with SEO, let's work together!</p>
+        <input id="form"/>
+      </div>
+
+
+    </main>
+
+    <footer class="text-center p-5">
+      <p>Build with tears & love</p>
+    </footer>
+  </div>
+
+    <script src="src/js/main.js" type="module"></script>
+  </body>
+</html>
